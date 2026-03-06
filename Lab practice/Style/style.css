@@ -1,0 +1,57 @@
+body{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.continer{
+    width: 600px;
+}
+form{
+    background-color: rgb(182, 179, 176);
+    border-radius: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    width: 100%;
+    text-align: left;
+}
+table{
+    width: 100%;
+    margin: 10px;
+    border: 10px;
+    padding: 10px;
+}
+label{
+    font: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 5px;
+}
+input{
+    background-color: white;
+    font-size: 20px;
+    border: 10px;
+    margin: 5px;
+    width: auto;
+    padding: 8px;
+}
+input[type="submit"]{
+    font-size: 20px;
+    margin-left:250px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#querylabel{
+    margin:30px;
+}
+textarea{
+    font-size: 20px;
+    width: 525px;
+    margin: 30px;
+    border: 20px;
+    padding: 10px;
+}

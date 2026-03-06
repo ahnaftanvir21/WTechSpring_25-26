@@ -4,6 +4,8 @@
     <title>Student Portal</title>
 </head>
 <body>
+    <link rel="stylesheet" href="D:\WEB TECH\WTechSpring_25-26\Lab practice\Style\style.css">
+    <div class="continer">
     <h1>Contact us</h1>
     <form action="submit">
         <table>
@@ -13,7 +15,7 @@
                     <input type="text" id="FirstName" name="FirstName">
                 </td>
                 <td>
-                    <label for="Lname" name="Lname">LastName</label><br>
+                    <label for="Lname" name="Lname">Last Name</label><br>
                     <input type="text" id="LastName" name="LastName">
                 </td>
             </tr>
@@ -27,16 +29,11 @@
                     <input type="number" id="PhoneNumber" name="PhoneNumber">
                 </td>
             </tr>
-            <tr>
-                <td>
-                    <label for="query">WHAT DO YOU HAVE IN MIND</label><br>
-                    <textarea name="query" id="query">Please enter query</textarea>
-                </td>
-            </tr>
-            <tr>
-                <td><input type="submit"></td>
-            </tr>
         </table>
+        <label for="query" id="querylabel">WHAT DO YOU HAVE IN MIND</label><br>
+        <textarea name="query" id="query" rows = "4" cols = "30" placeholder="Please enter query"></textarea>
+        <input type="submit">
     </form>
+    </div>
 </body>
 </html>
