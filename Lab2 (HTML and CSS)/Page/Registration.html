@@ -5,13 +5,14 @@
         <link rel="stylesheet" href="D:\WEB TECH\WTechSpring_25-26\Lab2 (HTML and CSS)\Design\Style.css">
     <div class="InsidePage">
     <head>
+        <script src="D:\WEB TECH\WTechSpring_25-26\Lab2 (HTML and CSS)\JS\Script.js"></script>
         <h1>Student Registration Page</h1>
     </head>
-    <form>
+    <form onsubmit="return collect_data()">
         <label for="StudentName">Student Name: </label>
         <input type="text" id = "StudentName" name = "StudentName" placeholder="Enter Your Name">
         <br><br>
-
+        <p id="NameError"></p>
         <label for="StudentCgpa">Student CGPA: </label>
         <input type="number" id = "StudentCgpa" name = "StudentCgpa" placeholder="Enter Your CGPA">
         <br><br>
