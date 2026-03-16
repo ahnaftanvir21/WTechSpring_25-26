@@ -17,4 +17,11 @@ label{
     font-size: 20px;
     font-weight: bold;
 }
+input{
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 5px;
+    width: 90%;
+    border-radius: 10px;
+}
 
