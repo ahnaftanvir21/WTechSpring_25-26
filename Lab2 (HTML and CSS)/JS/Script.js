@@ -11,7 +11,7 @@ function collect_name(){
         return true;
     }
     if(name.length<5){
-        document.getElementById("NameError").innerHTML="Name Can Not Have Less then 5 elements!!";
+        document.getElementById("NameError").innerHTML="Name Can Not Have Less then 5 elements!!"
     }
     return false;
 
