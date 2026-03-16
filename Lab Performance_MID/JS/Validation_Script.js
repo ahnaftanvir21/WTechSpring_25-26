@@ -13,6 +13,10 @@ function getUnit(){
         document.getElementById("Error").innerHTML="Unit Can not be Negative";
         document.getElementById("Error").style.color="red";
         document.getElementById("QuantityPerDay").value = "0";
+        Unit = 0;
     }
+    getUnitPrice();
+    let Total = Unit*UnitPrice*30;
+    console.log(Total);
     return false;
 }
