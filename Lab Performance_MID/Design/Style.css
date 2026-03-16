@@ -13,3 +13,8 @@ div.Continer{
     padding: 25px;
     margin: 100px;
 }
+label{
+    font-size: 20px;
+    font-weight: bold;
+}
+
