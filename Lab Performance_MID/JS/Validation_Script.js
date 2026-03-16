@@ -18,6 +18,9 @@ function getUnit(){
     getUnitPrice();
     let Total = Unit*UnitPrice*30;
     document.getElementById("TotalPrice").value = Total;
-    console.log(Total);
+    //console.log(Total);
+    if(Total > 1000){
+        alert("You are eligible for a gift coupon");
+    }
     return false;
 }
