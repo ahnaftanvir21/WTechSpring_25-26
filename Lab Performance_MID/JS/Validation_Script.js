@@ -17,6 +17,7 @@ function getUnit(){
     }
     getUnitPrice();
     let Total = Unit*UnitPrice*30;
+    document.getElementById("TotalPrice").value = Total;
     console.log(Total);
     return false;
 }
