@@ -24,7 +24,7 @@ include "../Controller/registrationvalidation.php";
                     <td> <input type = "password" id="pass" name ="password"><?php echo $password ?></td>
                 </tr>
                 <tr>
-                    <td><input type = "submit" id = "submit" name = "submit" </td>
+                    <td><input type = "submit" id = "submit" name = "submit"></td>
                 </tr>
         </table>
     </form>
