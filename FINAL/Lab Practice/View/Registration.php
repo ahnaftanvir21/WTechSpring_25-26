@@ -1,5 +1,5 @@
 <?php
-##include = "";
+include "../Controller/Registrationvalidation.php";
 ?>
 <!DOCTYPE html>
 <head>
@@ -53,7 +53,9 @@
                 <td><p style = 'color:red'>*</p></td>
             </tr>
             <tr>
-                <input type="submit">
+                <td>
+                    <input type="submit">
+                </td>
             </tr>
         </table>
     </form>
