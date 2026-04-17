@@ -16,7 +16,7 @@
                     <label>Name: </label>
                 </td>
                 <td>
-                    <input type="text">
+                    <input type="text" name="name">
                 </td>
                 <td><p style = 'color:red'>*</p></td>
             </tr>
@@ -25,7 +25,7 @@
                     <label>Email: </label>
                 </td>
                 <td>
-                    <input type="email">
+                    <input type="email" name = "email">
                 </td>
                 <td><p style = 'color:red'>*</p></td>
             </tr>
@@ -34,7 +34,7 @@
                     <label>Address: </label>
                 </td>
                 <td>
-                    <textarea name="Address" id="Address"></textarea>
+                    <textarea name="Address" id="Address" name = "address"></textarea>
                 </td>
                 <td><p style = 'color:red'>*</p></td>
             </tr>
@@ -43,14 +43,17 @@
                     <label>Gender: </label>
                 </td>
                 <td>
-                    <input type="radio" value="male">
+                    <input type="radio" value="male" name="GMale">
                     <label> Male</label>
                 </td>
                 <td>
-                    <input type="radio" value="female">
+                    <input type="radio" value="female" name="GFemale">
                     <label> Female</label>
                 </td>
                 <td><p style = 'color:red'>*</p></td>
+            </tr>
+            <tr>
+                <input type="submit">
             </tr>
         </table>
     </form>
