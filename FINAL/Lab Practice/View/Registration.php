@@ -34,7 +34,7 @@ include "../Controller/Registrationvalidation.php";
                     <label>Address: </label>
                 </td>
                 <td>
-                    <textarea name="Address" id="Address" name = "address"></textarea>
+                    <textarea name="Address" id="Address"></textarea>
                 </td>
                 <td><p style = 'color:red'>*</p></td>
             </tr>
@@ -43,11 +43,11 @@ include "../Controller/Registrationvalidation.php";
                     <label>Gender: </label>
                 </td>
                 <td>
-                    <input type="radio" value="male" name="GMale">
+                    <input type="radio" value="male" name="gender">
                     <label> Male</label>
                 </td>
                 <td>
-                    <input type="radio" value="female" name="GFemale">
+                    <input type="radio" value="female" name="gender">
                     <label> Female</label>
                 </td>
                 <td><p style = 'color:red'>*</p></td>
