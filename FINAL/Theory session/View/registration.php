@@ -7,7 +7,7 @@ include "../Controller/registrationvalidation.php";
     <title>Registration Log In Form</title>
 </head>
 <body>
-    <form method= "post" action="">
+    <form method="post" action="">
         <table>
             <tr>
                 <td>

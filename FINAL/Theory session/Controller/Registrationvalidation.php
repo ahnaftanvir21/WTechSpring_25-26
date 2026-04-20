@@ -7,7 +7,7 @@
             $name = $_POST["name"];
             $password = $_POST["password"];
 
-            if(!empt($name) && strlen($name) >= 5 && strlen($password) >= 4){
+            if(!empty($name) && strlen($name) >= 5 && strlen($password) >= 4){
                 $_SESSION["name"] = $name;
                 setcookie('name',$name,time()+3600,"/");
                 echo "Login Successful";
@@ -19,5 +19,5 @@
     else{
         echo "Please log in again!";
     }
-
+    session_abort();
 ?>
