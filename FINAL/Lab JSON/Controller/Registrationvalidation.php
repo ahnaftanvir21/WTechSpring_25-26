@@ -1,4 +1,5 @@
 <?php
+session_start();
 $name = "";
 $email= "";
 $address = "";
@@ -11,7 +12,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $address = $_POST['Address'];
     $gender = $_POST["gender"];
     echo  $gender;
-    if(!empty($name) && strlen($name) > 5 && filter_var($email, FILTER_VALIDATE_EMAIL) && !empty($email) && !empty($gender)){
+    if(!empty($name) && strlen($name) > 5 && filter_var($email, FILTER_VALIDATE_EMAIL) && !empty($address) && !empty($gender)){
+        $_SESSION["name"] = $name;
+        $_SESSION["email"] = $email;
+        $_SESSION["Address"] = $address;
+        $_SESSION["gender"] = $gender;
         
     }
 }
