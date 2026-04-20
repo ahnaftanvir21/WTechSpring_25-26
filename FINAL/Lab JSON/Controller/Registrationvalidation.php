@@ -4,6 +4,7 @@ $name = "";
 $email= "";
 $website = "";
 $gender = "";
+$datafile ="../data.json";
 if($_SERVER["REQUEST_METHOD"] == "POST"){
     $name = $_POST["name"];
     //echo $name;
@@ -22,6 +23,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         setcookie('website',$name,time()+3600,"/");
         setcookie('gender',$gender,time()+3600,"/");
         echo "login Successfull\n";
+
     }
     
     if(isset($_SESSION["name"]) || isset($_COOKIE["name"]) && isset($_SESSION["email"]) || isset($_COOKIE["email"]) && isset($_SESSION["website"]) || isset($_COOKIE["website"]) && isset($_SESSION["gender"]) || isset($_COOKIE["gender"])){
