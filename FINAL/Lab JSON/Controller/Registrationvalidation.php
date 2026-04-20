@@ -24,6 +24,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         setcookie('gender',$gender,time()+3600,"/");
         echo "login Successfull\n";
 
+        $formdata = array("Name"=>$name, "email"=>$email ,"website" => $website, "gender" => gender);
+        if(file_exists($datafile)){
+            existdata = file_get_contents($datafile);
+            $tempdata = json_decode($existdata,true);
+        }
+        else{
+            $tempdata = array();
+        }
+
     }
     
     if(isset($_SESSION["name"]) || isset($_COOKIE["name"]) && isset($_SESSION["email"]) || isset($_COOKIE["email"]) && isset($_SESSION["website"]) || isset($_COOKIE["website"]) && isset($_SESSION["gender"]) || isset($_COOKIE["gender"])){
