@@ -31,10 +31,10 @@ include "../Controller/Registrationvalidation.php";
             </tr>
             <tr>
                 <td>
-                    <label>Address: </label>
+                    <label>Website: </label>
                 </td>
                 <td>
-                    <textarea name="Address" id="Address"></textarea>
+                    <textarea name="website" id="website"></textarea>
                 </td>
                 <td><p style = 'color:red'>*</p></td>
             </tr>
