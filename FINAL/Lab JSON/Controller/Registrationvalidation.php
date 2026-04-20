@@ -12,7 +12,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $website = $_POST['website'];
     $gender = $_POST["gender"];
     echo  $gender;
-    if(!empty($name) && strlen($name) > 5 && filter_var($email, FILTER_VALIDATE_EMAIL) && !empty($website) && !empty($gender)){
+    if(!empty($name) && strlen($name) > 5 && filter_var($email, FILTER_VALIDATE_EMAIL) && preg_match('@^(?:http://)?([^/]+)@i', $url, $website); && !empty($gender)){
         $_SESSION["name"] = $name;
         $_SESSION["email"] = $email;
         $_SESSION["website"] = $website;
