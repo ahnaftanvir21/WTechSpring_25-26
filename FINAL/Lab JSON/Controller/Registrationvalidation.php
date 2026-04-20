@@ -17,7 +17,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $_SESSION["email"] = $email;
         $_SESSION["Address"] = $address;
         $_SESSION["gender"] = $gender;
-        
+        setcookie('name',$name,time()+3600,"/");
+        setcookie('email',$email,time()+3600,"/");
+        setcookie('Address',$name,time()+3600,"/");
+        setcookie('gender',$gender,time()+3600,"/");
+        echo "login Successfull";
     }
 }
 ?>
