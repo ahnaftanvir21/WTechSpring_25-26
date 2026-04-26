@@ -6,6 +6,11 @@
             $dp_password="";
             $db_name="register";
 
+            $connection = new mysqli($db_host, $db_user, $dp_password,$db_name);
+            if($connection->connection_error){
+                die("Please Conncet the Database".$conncection->connect_error);
+            }
+            return $conncection;
         }
         
     }
