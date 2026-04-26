@@ -12,8 +12,10 @@
             }
             return $conncection;
         }
-        function fill($connection, $tablename,$name,$emali,$website,$gender){
+        function fillform($connection, $tablename,$name,$emali,$website,$gender){
             $sql = "INSERT INTO ".$tablename."(name,email,website,gender) VALUES('".$name."','".$email."','"$website"','"gender"')";
+            $result = $connection->query($sql);
+            return $result;
         }
     }
 ?>
