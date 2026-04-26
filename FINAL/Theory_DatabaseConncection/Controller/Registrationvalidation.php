@@ -1,4 +1,5 @@
 <?php
+include "../Model/db.php";
 session_start();
 $name = "";
 $email= "";
@@ -47,7 +48,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
     $database =new db();
     $connection = $database->connection();
-    $result = $database->signup($connection,"info",$name,$email,$website,$gender);
+    $result = $database->fillform($connection,"info",$name,$email,$website,$gender);
+    if($result){
+        //Header("Location: ..view")
+    }
     
     if(isset($_SESSION["name"]) || isset($_COOKIE["name"]) && isset($_SESSION["email"]) || isset($_COOKIE["email"]) && isset($_SESSION["website"]) || isset($_COOKIE["website"]) && isset($_SESSION["gender"]) || isset($_COOKIE["gender"])){
         echo "Welcome Back!";

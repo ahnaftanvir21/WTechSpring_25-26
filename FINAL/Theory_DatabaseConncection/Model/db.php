@@ -7,13 +7,13 @@
             $db_name="register";
 
             $connection = new mysqli($db_host, $db_user, $dp_password,$db_name);
-            if($connection->connection_error){
+            if($connection->connect_error){
                 die("Please Conncet the Database".$conncection->connect_error);
             }
-            return $conncection;
+            return $connection;
         }
-        function fillform($connection, $tablename,$name,$emali,$website,$gender){
-            $sql = "INSERT INTO ".$tablename."(name,email,website,gender) VALUES('".$name."','".$email."','"$website"','"gender"')";
+        function fillform($connection, $tablename,$name,$email,$website,$gender){
+            $sql = "INSERT INTO ".$tablename."(name,email,website,gender) VALUES('".$name."','".$email."','".$website."','".$gender."')";
             $result = $connection->query($sql);
             return $result;
         }
