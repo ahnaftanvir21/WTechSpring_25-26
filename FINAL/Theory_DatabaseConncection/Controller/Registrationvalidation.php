@@ -44,8 +44,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             }
         $data = file_get_contents($datafile);
         $mydata = json_decode($data);
-
     }
+    $database =new db();
+    $connection = $database->connection();
+    $result = $database->signup($connection,"info",$name,$email,$website,$gender);
     
     if(isset($_SESSION["name"]) || isset($_COOKIE["name"]) && isset($_SESSION["email"]) || isset($_COOKIE["email"]) && isset($_SESSION["website"]) || isset($_COOKIE["website"]) && isset($_SESSION["gender"]) || isset($_COOKIE["gender"])){
         echo "Welcome Back!";
