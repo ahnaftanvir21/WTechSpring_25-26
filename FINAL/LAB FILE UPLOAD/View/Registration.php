@@ -6,7 +6,7 @@ include "../Controller/Registrationvalidation.php";
     <title>Registration</title>
 </head>
 <body>
-    <form method = "post" action="">
+    <form method = "post" action="", enctype="multipart/form-data">
         <table>
             <tr>
                 <td><p style = 'color: red'>* requird field</label></td>
