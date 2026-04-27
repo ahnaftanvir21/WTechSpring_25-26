@@ -32,10 +32,12 @@ include "../Controller/Registrationvalidation.php";
             <tr>
                 <td>
                     <label>Username: </label>
+                    
                 </td>
                 <td>
                     <input type="text">
                 </td>
+                <td><p style = 'color:red'>*</p></td>
             </tr>
             <tr>
                 <td>
@@ -44,6 +46,14 @@ include "../Controller/Registrationvalidation.php";
                 <td>
                     <input type="password">
                 </td>
+                <td><p style = 'color:red'>*</p></td>
+            </tr>
+            <tr>
+                <td><label>Add file:</label></td>
+                <td>
+                    <input type="file" name = "file">
+                </td>
+                <td><p style = 'color:red'>*</p></td>
             </tr>
             <tr>
                 <td>
