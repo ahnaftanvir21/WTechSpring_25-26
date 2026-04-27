@@ -31,6 +31,22 @@ include "../Controller/Registrationvalidation.php";
             </tr>
             <tr>
                 <td>
+                    <label>Username: </label>
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Password</label>
+                </td>
+                <td>
+                    <input type="password">
+                </td>
+            </tr>
+            <tr>
+                <td>
                     <label>Website: </label>
                 </td>
                 <td>
