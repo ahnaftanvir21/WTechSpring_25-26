@@ -12,8 +12,8 @@
             }
             return $connection;
         }
-        function fillform($connection, $tablename,$name,$email,$website,$gender){
-            $sql = "INSERT INTO ".$tablename."(name,email,website,gender) VALUES('".$name."','".$email."','".$website."','".$gender."')";
+        function fillform($connection, $tablename,$name,$email,$username,$password,$file,$website,$gender){
+            $sql = "INSERT INTO ".$tablename."(name,email,username,password,file,website,gender) VALUES('".$name."','".$email."','".$username."','".$password."','".$file."','".$website."','".$gender."')";
             $result = $connection->query($sql);
             return $result;
         }
