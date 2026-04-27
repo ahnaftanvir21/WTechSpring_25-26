@@ -3,14 +3,20 @@ include "../Model/db.php";
 session_start();
 $name = "";
 $email= "";
+$username="";
+$password="";
 $website = "";
 $gender = "";
+
 $datafile ="../data.json";
 if($_SERVER["REQUEST_METHOD"] == "POST"){
     $name = $_POST["name"];
     //echo $name;
     $email = $_POST["email"];
     //echo "Email: " .$email;
+    $username=$_POST["username"];
+    $password = $_POST["password"];
+    $file = $_POST["file"];
     $website = $_POST['website'];
     $gender = $_POST["gender"];
     //echo  $gender;
@@ -45,10 +51,19 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             }
         $data = file_get_contents($datafile);
         $mydata = json_decode($data);
+
+        if($file){
+            $targetdirectory = "../File/";
+            $path = $targetdirectory.basename($file["name"]);
+            $result = move_uploaded_file($file["tmp_name"],$path);
+        }
+        else{
+            $path="";
+        }
     }
     $database =new db();
     $connection = $database->connection();
-    $result = $database->fillform($connection,"info",$name,$email,$website,$gender);
+    $result = $database->fillform($connection,"info",$name,$email,,$website,$gender);
     if($result){
         //Header("Location: ..view")
     }
